@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mega Lanche | Seu lanche favorito</title>
+
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">🍔 Mega Lanche</div>
+
+        <nav aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#atendimento">Fazer pedido</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section class="card" id="atendimento">
+
+            <div class="hero">
+                <div class="food-emoji">🍔 🍟 🥤</div>
+
+                <h1>Bateu a fome?</h1>
+                <p>Seu lanche favorito, do seu jeito!</p>
+            </div>
+
+            <div class="card-content">
+
+                <p>
+                    Bem-vindo à <strong>Mega Lanche</strong>!
+                    Escolha seu lanche, personalize seu pedido
+                    e conte para a gente como prefere receber.
+                    É rápido, fácil e delicioso.
+                </p>
+
+                <div class="features">
+                    <span class="pill">🍔 Hambúrgueres</span>
+                    <span class="pill">🍟 Porções</span>
+                    <span class="pill">🥤 Bebidas</span>
+                </div>
+
+                <a class="button"
+                   href="https://landbot.online/v3/H-3535344-UMEY1C1ZDB28FAQT/index.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Fazer meu pedido
+                </a>
+
+                <a class="button button-secondary"
+                    href="https://landbot.online/v3/H-3535344-UMEY1C1ZDB28FAQT/index.html"
+                   href="#cardapio">
+                    🍔 Ver Cardápio
+                </a>
+
+                <a class="button button-outline"
+                   href="https://landbot.online/v3/H-3535344-UMEY1C1ZDB28FAQT/index.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    💬 Falar com atendente
+                </a>
+
+                <div class="note">
+                    Escolha uma opção para continuar seu atendimento.
+                </div>
+
+                <section id="cardapio" class="menu-section" hidden>
+                    <h2>🍔 Nosso Cardápio</h2>
+
+                    <p>
+                        <strong>Hambúrgueres</strong><br>
+                        Clássico • X-Bacon • X-Salada
+                    </p>
+
+                    <p>
+                        <strong>Porções</strong><br>
+                        Batata frita • Onion rings
+                    </p>
+
+                    <p>
+                        <strong>Bebidas</strong><br>
+                        Refrigerante • Suco • Água
+                    </p>
+
+                    <p class="note">
+                        Itens e preços ilustrativos.
+                    </p>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <p>
+            <strong>🍔 Mega Lanche</strong> —
+            sabor que combina com você!
+        </p>
+
+        <p>Atendimento virtual • Cardápio • Pedidos</p>
+
+        <p>© 2026 Mega Lanche. Projeto demonstrativo.</p>
+    </footer>
+
+    <script>
+        const menuLink = document.querySelector(
+            'a[href="#cardapio"]'
+        );
+
+        const menuSection = document.getElementById("cardapio");
+
+        menuLink.addEventListener("click", function () {
+            menuSection.hidden = false;
+        });
+    </script>
+
+</body>
+</html>
